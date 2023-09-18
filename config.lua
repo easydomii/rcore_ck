@@ -6,8 +6,12 @@ Config.DebugLevel = {
 }
 Config.AllowedModules = {
     ['basic'] = true, --basic tables
-    ['vehicles'] = false, --delete from owned_vehicles
-    ['hotel'] = false, --rcore_hotel
+    ['vehicles'] = true, --delete from owned_vehicles
+    ['hotel'] = true, --rcore_hotel
+    ['housing'] = true,
+    ['smartphone'] = true,
+    ['inventory'] = true,
+
 }
 Config.BasicTables = {
     {
@@ -20,6 +24,10 @@ Config.BasicTables = {
     },
     {
         table = 'billing',
+        column = 'identifier',
+    },
+    {
+        table = 'billings',
         column = 'identifier',
     },
     {
